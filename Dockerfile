@@ -5,8 +5,8 @@ LABEL "com.github.actions.description"="Node.js For Github Actions"
 LABEL "com.github.actions.icon"="box"
 LABEL "com.github.actions.color"="green"
 
-LABEL "repository"="https://github.com/eggjs/eggjs.github.io"
-LABEL "homepage"="https://github.com/eggjs/eggjs.github.io"
+LABEL "repository"="https://github.com/thonatos/github-actions-nodejs"
+LABEL "homepage"="https://github.com/thonatos/github-actions-nodejs"
 LABEL "maintainer"="Suyi <thonatos.yang@gmail.com>"
 
 RUN \
