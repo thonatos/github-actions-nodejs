@@ -10,6 +10,9 @@
 
 ## Usage
 
+
+### github actions
+
 ```bash
 workflow "Push" {
   on = "push"
@@ -36,6 +39,33 @@ action "Filters for GitHub Actions" {
 }
 ```
 
+### custom actions (with docker image)
+
+```bash
+workflow "Push" {
+  on = "push"
+  resolves = ["CI"]
+}
+
+action "Installation" {
+  needs = "Filters for GitHub Actions"
+  uses = "docker://thonatos/github-actions-nodejs:latest"
+  args = "npm install npminstall -g && npminstall"
+}
+
+action "CI" {
+  needs = "Installation"
+  uses = "docker://thonatos/github-actions-nodejs:latest"
+  args = "npm run ci"
+}
+
+# Filter for master branch
+action "Filters for GitHub Actions" {
+  uses = "actions/bin/filter@3c0b4f0e63ea54ea5df2914b4fabf383368cd0da"
+  secrets = ["GITHUB_TOKEN"]
+  args = "branch master"
+}
+```
 ## Contributing
 
 ### License
