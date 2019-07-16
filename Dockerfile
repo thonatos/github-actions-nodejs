@@ -2,8 +2,8 @@ FROM node:lts-slim
 
 LABEL "com.github.actions.name"="github-actions-nodejs"
 LABEL "com.github.actions.description"="Node.js For Github Actions"
-LABEL "com.github.actions.icon"="mic"
-LABEL "com.github.actions.color"="purple"
+LABEL "com.github.actions.icon"="box"
+LABEL "com.github.actions.color"="green"
 
 LABEL "repository"="https://github.com/eggjs/eggjs.github.io"
 LABEL "homepage"="https://github.com/eggjs/eggjs.github.io"
