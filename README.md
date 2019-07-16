@@ -35,3 +35,9 @@ action "Filters for GitHub Actions" {
   args = "branch master"
 }
 ```
+
+## Contributing
+
+### License
+
+The project is [MIT licensed](./LICENSE).
