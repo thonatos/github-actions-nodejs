@@ -1,6 +1,6 @@
 FROM node:lts-slim
 
-LABEL "com.github.actions.name"="node"
+LABEL "com.github.actions.name"="github-actions-nodejs"
 LABEL "com.github.actions.description"="Node.js For Github Actions"
 LABEL "com.github.actions.icon"="mic"
 LABEL "com.github.actions.color"="purple"
