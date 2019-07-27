@@ -1,10 +1,12 @@
 #!/bin/sh -l
 
+# env
+echo "# env";
 sh -c "env";
 
-# show event.json
+# event.json
 if [ -n "$GITHUB_EVENT_PATH" ]; then
-  echo "event.json";
+  echo "# event.json";
   cat "$GITHUB_EVENT_PATH";
 fi
 
